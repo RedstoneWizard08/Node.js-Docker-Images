@@ -58,4 +58,6 @@ ENV YARN_INSTALL_BASE_DIR=
 ENV YARN_INSTALL_DIR=
 ENV YARN_TAR_FLAGS=
 
+RUN yarn cache clean --all
+
 CMD [ "/usr/local/bin/node" ]
